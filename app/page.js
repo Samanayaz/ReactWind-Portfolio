@@ -24,7 +24,7 @@ export default function Home() {
       <main className="bg-white-50 px-10" >
         <section className="h-screen clearfix contents">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">DevelopedBySaman</h1>
+            <h1 className="text-xl font-burtons">UIbySaman</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
@@ -45,6 +45,7 @@ export default function Home() {
           <div className="text-center p-10 py-10">
             <h2 className="text-4xl py-2 text-teal-600 font-medium">Saman Ayaz Ebrahim</h2>
             <h3 className="text-xl py-2">Front End Developer | UI Designer</h3>
+            <p className="uppercase text-sm">Making the interfaces more beautiful, pixel by pixel</p>
             <p className="text-medium py-5 leading-8 text-gray-800 max-w-xl mx-auto">
               A UI Developer with the extensive experience along with creative problem-solving approach and curiosity to
               create best experience for people. My knowledge of user research and design catalyzes seamless collaboration
@@ -111,10 +112,10 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 lg:w-1/4 ">
             
-              <a href="https://samanayaz.github.io/Homepage/" target="_blank"><Image src={web1} className="border-10 border-solid border-teal-600 rounded-lg object-cover w-full h-full" /></a>
+              <a href="https://samanayaz.github.io/Homepage/" target="_blank"><Image src={web1} className="rounded-sm object-cover border-2 border-solid border-black w-full h-full" /></a>
             </div>
             <div className="basis-1/3 lg:w-1/4" >
-              <a href="https://samanayaz.github.io/CheckOut/" target="_blank"  ><Image src={web2} className="rounded-lg object-cover border-10 border-solid border-teal-600 w-full h-full" /></a>
+              <a href="https://samanayaz.github.io/CheckOut/" target="_blank"  ><Image src={web2} className="rounded-sm object-cover border-2 border-solid border-black w-full h-full" /></a>
             </div>
           </div>
         </section>
@@ -124,7 +125,8 @@ export default function Home() {
 <div className="text-center shadow-lg p-6 rounded-xl my-10">
             <h3 className="text-2xl py-1 text-teal-600 font-medium">Contact</h3>
 
-            <p>Here's how you can reach me...</p>
+            <p className="uppercase text-sm">Currently available for contract or full-time work,
+            and would love to hear from you</p>
 <div className="py-10">
 <p className="shadow-sm p-2">Email: samanmamdani@gmail.com</p>
             <p className="shadow-sm p-2">Phone: (847) 630-2658</p>
