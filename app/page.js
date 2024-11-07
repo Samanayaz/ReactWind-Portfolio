@@ -7,7 +7,7 @@ import devImage from '../public/hero.jpg';
 import design from '../public/interface2.png';
 import soft from '../public/team.jpg';
 import web1 from '../public/homepage2.png';
-import web2 from '../public/checkout.png';
+import web2 from '../public/checkout2.png';
 // import resume from '../public/samanFe.pdf';
 // import { Page, Document } from "react-pdf";
 
@@ -102,23 +102,38 @@ export default function Home() {
         {/* project */}
 
         <section>
-          <div>
-            <h3 className="text-2xl py-1">Projects</h3>
+          <div className="text-center ">
+            <h3 className="text-2xl py-1 text-teal-600 font-medium">Projects</h3>
 
             <p>Here are few of my personally done projects</p>
 
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 lg:w-1/4">
+            <div className="basis-1/3 lg:w-1/4 ">
             
-              <a href="https://samanayaz.github.io/Homepage/" target="_blank"><Image src={web1} className="rounded-lg object-cover w-full" layout="responsive" width={'100'} height={'100'}/></a>
+              <a href="https://samanayaz.github.io/Homepage/" target="_blank"><Image src={web1} className="border-10 border-solid border-teal-600 rounded-lg object-cover w-full h-full" /></a>
             </div>
             <div className="basis-1/3 lg:w-1/4" >
-              <a href="https://samanayaz.github.io/CheckOut/" target="_blank"  ><Image src={web2} className="rounded-lg object-cover w-full" layout="responsive" width={'100'} height={'100'}/></a>
+              <a href="https://samanayaz.github.io/CheckOut/" target="_blank"  ><Image src={web2} className="rounded-lg object-cover border-10 border-solid border-teal-600 w-full h-full" /></a>
             </div>
           </div>
         </section>
 
+
+<section>
+<div className="text-center shadow-lg p-6 rounded-xl my-10">
+            <h3 className="text-2xl py-1 text-teal-600 font-medium">Contact</h3>
+
+            <p>Here's how you can reach me...</p>
+<div className="py-10">
+<p className="shadow-sm p-2">Email: samanmamdani@gmail.com</p>
+            <p className="shadow-sm p-2">Phone: (847) 630-2658</p>
+            <p className="shadow-sm p-2">Location: Chicago, Illinois</p>
+</div>
+    
+
+          </div>
+</section>
       </main>
     </div>
   );

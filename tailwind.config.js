@@ -15,7 +15,11 @@ module.exports = {
 
       fontFamily: {
         burtons: 'burtons'
-      }
+      },
+
+      borderWidth: {
+        '10': '10px',
+      },
     },
   },
   plugins: [],
