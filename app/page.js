@@ -8,8 +8,9 @@ import design from '../public/interface2.png';
 import soft from '../public/team.jpg';
 import web1 from '../public/homepage2.png';
 import web2 from '../public/checkout2.png';
-// import resume from '../public/samanFe.pdf';
-// import { Page, Document } from "react-pdf";
+import Resume from '../public/pages/resume';
+import ux from '../public/ux.webp';
+import ui from '../public/research.png';
 
 
 export default function Home() {
@@ -26,19 +27,12 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">UIbySaman</h1>
             <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-              </li>
               {/* <li>
-                <a href="" className=" bg-gradient-to-r from-cyan-500 to-teal-500 py-2 text-white rounded-md px-4 ml-8">Resume</a>
-              </li>
-              <li>
-                <Document file={resume}
-                onLoadError={console.error}
-                > <Page pageIndex={0}/>
-
-                </Document>
+                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
               </li> */}
+              <li>
+                {/* <a href={Resume} className=" bg-gradient-to-r from-cyan-500 to-teal-500 py-2 text-white rounded-md px-4 ml-8">Resume</a> */}
+              </li>
             </ul>
           </nav>
 
@@ -69,7 +63,7 @@ export default function Home() {
 
             <div className="flex flex-col xl:flex-row items-center justify-around">
               <div className="flex justify-center m-3 w-1/4">
-                <Image src={(design)} />
+                <Image src={(design)} alt="skillset"/>
               </div>
               <div className="w-2/4 p-4 items-end leading-8 text-gray-800 dark:text-gray-200">
                 <p className="text-md py-2">
@@ -92,7 +86,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex justify-center m-3 w-1/4 ">
-                <Image src={(soft)} />
+                <Image src={(soft)} alt="team designing"/>
               </div>
             </div>
           </div>
@@ -110,12 +104,51 @@ export default function Home() {
 
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 lg:w-1/4 ">
+            <div className="basis-1/3 lg:w-1/3 ">
             
-              <a href="https://samanayaz.github.io/Homepage/" target="_blank"><Image src={web1} className="rounded-sm object-cover border-2 border-solid border-black w-full h-full" /></a>
+              <a href="https://samanayaz.github.io/Homepage/" target="_blank"><Image src={web1} className="rounded-sm object-cover border-2 border-solid border-black w-full h-full transition-all duration-300 hover:scale-110" /></a>
             </div>
             <div className="basis-1/3 lg:w-1/4" >
-              <a href="https://samanayaz.github.io/CheckOut/" target="_blank"  ><Image src={web2} className="rounded-sm object-cover border-2 border-solid border-black w-full h-full" /></a>
+              <a href="https://samanayaz.github.io/CheckOut/" target="_blank"  ><Image src={web2} className="rounded-sm object-cover border-2 border-solid border-black w-full h-full transition-all duration-300 hover:scale-110" /></a>
+            </div>
+          </div>
+        </section>
+
+        {/* UXUI project */}
+
+        <section>
+          <div className="text-center">
+            <h3 className="text-2xl py-1 text-teal-600 font-medium">UX | UI </h3>
+            <p>Here's my personally done project</p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 lg:w-1/4 ">
+        <div className="relative group">
+        <Image
+          src={ui}
+          alt="UI Design"
+          className="rounded-sm object-cover border-2 border-solid border-black h-auto w-auto"
+        />
+      
+        {/* Research Link */}
+        <div className=" bg-gray-950 text-white py-2 text-center absolute bottom-0 left-0 w-1/2">
+          <a href="https://xd.adobe.com/view/b5cecde4-5287-4529-9546-3751bdfe1086-e09d/?fullscreen">
+            <h3 className="text-md font-bold transition-all duration-300 hover:text-xl">
+              Research
+            </h3>
+          </a>
+        </div>
+      
+        {/* Prototype Link */}
+        <div className=" bg-gray-950 text-white py-2 text-center absolute bottom-0 right-0 w-1/2">
+          <a href="https://xd.adobe.com/view/ee7257d9-88bd-44a4-a47c-a7a675292a21-bb21/">
+            <h3 className="text-md font-bold transition-all duration-300 hover:text-xl text-center">
+              Prototype
+            </h3>
+          </a>
+        </div>
+      </div>
+          
             </div>
           </div>
         </section>
